@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #222;
+    color: white;
+    font-family: sans-serif;
+}
+
+div{
+    border: white dashed 2px;
+    text-align: center;
+    padding: 5rem;
+}

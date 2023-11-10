@@ -34,7 +34,7 @@ function getRandom() {
 // funzione generica cancella innerelementbyid
 // function eraseId(id) {
 //     document.getElementById(`"${id}"`).innerHTML = "";
-// };
+// }; DA CHIEDERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // funzione per cancellare innerHTML di numbers
 function eraseNumbers() {
@@ -53,11 +53,11 @@ function askNumbers() {
 }
 
 // funzione per verificare la corrispondenza tra i numeri random e i numeri utente(in generale tra i numeri di due array con la stessa lunghezza)
-//purtroppo vanno inseriti in ordine
+//purtroppo vanno inseriti in ordine (lasciato in commento e risolto)
 
 function checkArrays(firstArr, secondArr) {
     
-
+    // cicla gli elementi del secondo array e gli compara col primo
     for (let i = 0; i < firstArr.length; i++) {
         const element = secondArr[i];
         console.log(element);
@@ -77,7 +77,7 @@ function checkArrays(firstArr, secondArr) {
         
         console.log(indovinate);
     }
-
+    // controlla riferimento indovinate e conferma vittoria o sconfitta 
     if (indovinate == 5) {
         console.log("hai vinto");
         document.getElementById("numbers").innerHTML = `hai vinto`;
