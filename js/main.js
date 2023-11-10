@@ -1,0 +1,5 @@
+// --- crea numeri casuali e salva in un array (for)
+// --- mostra numeri array su pagina (inner html)
+// --- nascondi numeri dopo 30 sec (timer setTimeout)
+// --- chiedi numeri ad utente e salva in un array (setTimeou)
+// --- confronta i due array e stampa risultato (if else )
