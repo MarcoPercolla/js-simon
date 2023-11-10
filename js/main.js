@@ -5,6 +5,8 @@ getRandom();
 document.getElementById("numbers").innerHTML = pcNumbers;
 
 // --- mostra numeri array su pagina (inner html)
+
+eraseId("numbers");
 // --- nascondi numeri dopo 30 sec (timer setTimeout)
 // --- chiedi numeri ad utente e salva in un array (setTimeou)
 // --- confronta i due array e stampa risultato (if else )
@@ -22,4 +24,8 @@ function getRandom() {
         pcNumbers.push(Math.floor(Math.random() * 100) + 1);
     }
 
+}
+
+function eraseId(id) {
+    document.getElementById(id).innerHTML = "";
 }
