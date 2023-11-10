@@ -10,6 +10,8 @@ document.getElementById("numbers").innerHTML = pcNumbers;
 // --- nascondi numeri dopo 30 sec (timer setTimeout)
 setTimeout(eraseNumbers, 3000);
 // --- chiedi numeri ad utente e salva in un array (setTimeou)
+setTimeout(askNumbers, 3000)
+
 // --- confronta i due array e stampa risultato (if else )
 
 
@@ -31,10 +33,16 @@ function getRandom() {
 // function eraseId(id) {
 //     document.getElementById(`"${id}"`).innerHTML = "";
 // };
+
+// funzione per cancellare innerHTML di numbers
 function eraseNumbers(){
     document.getElementById("numbers").innerHTML = "";
 }
 
-
-
-
+// funzione per chiedere 5 numeri all utente
+function askNumbers() {
+    for(i = 0; i < 5; i++) {
+        userNumbers.push(parseInt(prompt("Che numero hai visto?")));
+    };
+    console.log(userNumbers);
+}
